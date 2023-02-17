@@ -31,8 +31,8 @@ jobs:
         existing_bucket_name: true
         aws_access_key: ${{ secrets.AWS_ACCESS_KEY_ID }}
         aws_secret_key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
-        application_name: simple node app
-        environment_name: Simplenodeapp-env
-        version_label: "simplenodeapp-${{ steps.format-time.outputs.replaced }}"
+        application_name: node app on docker
+        environment_name: Nodeappondocker-env
+        version_label: "simplenodeapp12"
         region: us-east-1
         deployment_package: deploy.zip
