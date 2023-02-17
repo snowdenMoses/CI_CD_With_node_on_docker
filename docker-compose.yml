@@ -1,0 +1,13 @@
+version: "3"
+services:
+    db:
+        image: "postgres:15.2-alpine"
+  
+    backend:
+        build: .
+        ports:
+          - "3001:3004"
+        volumes:
+          - /app/node_modules
+          - .:/app
+    
