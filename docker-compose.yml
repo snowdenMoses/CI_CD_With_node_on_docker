@@ -2,6 +2,9 @@ version: "3"
 services:
     db:
         image: "postgres:15.2-alpine"
+        environment:
+          POSTGRES_PASSWORD: example
+          POSTGRES_USERNAME: snowdenmoses
   
     backend:
         build: .
